@@ -9,8 +9,6 @@ sudo apt-get install python-dev
 #1. get configuration variables
 source variables_build.cfg
 
-echo $FREETYPE_URL
-
 #2. get tcl
 #source ./scripts/get_tcl.sh
 
@@ -21,6 +19,9 @@ echo $FREETYPE_URL
 #source ./scripts/get_freetype.sh
 
 #5. get vtk
-source ./scripts/get_vtk.sh
+#source ./scripts/get_vtk.sh
+
+#6. get GDCM
+source ./scripts/get_gdcm.sh
 
 

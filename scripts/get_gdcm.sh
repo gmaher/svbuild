@@ -1,0 +1,13 @@
+echo "Downloading GDCM $GDCM_CHECKOUT and building in $GDCM_BUILD_DIR"
+
+git clone $GDCM_URL
+
+mkdir $GDCM_BUILD_DIR
+cd $GDCM_BUILD_DIR
+
+cmake $GDCM_DIR -DGDCM_USE_VTK=ON -DGDCM_BUILD_SHARED_LIBS=ON -DVTK_DIR=$VTK_BUILD_DIR
+
+make -j6
+
+cd $BUILD_DIR
+
