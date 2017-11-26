@@ -5,6 +5,7 @@
 #Rest of libraries are built in library_dir/build
 
 sudo apt-get install python-dev
+sudo apt-get install autoconf
 
 #1. get configuration variables
 source variables_build.cfg
@@ -22,6 +23,10 @@ source variables_build.cfg
 #source ./scripts/get_vtk.sh
 
 #6. get GDCM
-source ./scripts/get_gdcm.sh
+#source ./scripts/get_gdcm.sh
 
+#7. get ITK
+source ./scripts/get_itk.sh
 
+#8. get Open Cascade
+#source ./scripts/get_opencascade.sh
