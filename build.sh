@@ -7,6 +7,8 @@
 sudo apt-get install python-dev
 sudo apt-get install autoconf
 
+mkdir $EXTERNALS_DIR
+
 #1. get configuration variables
 source variables_build.cfg
 

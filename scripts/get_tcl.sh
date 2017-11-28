@@ -11,8 +11,10 @@ cd $TCL_DIR
 git checkout $TCL_CHECKOUT
 cd $TCL_BUILD_DIR
 
-./configure --enable-shared --enable-64bit
+./configure --enable-shared --enable-64bit --prefix=$EXTERNALS_DIR
 
 make -j6
+
+make install
 
 cd $BUILD_DIR

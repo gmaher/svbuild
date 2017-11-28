@@ -9,8 +9,10 @@ git checkout $TK_CHECKOUT
 
 cd $TK_BUILD_DIR
 
-./configure --enable-shared --enable-64bit --with-tcl=$TCL_BUILD_DIR
+./configure --enable-shared --enable-64bit --with-tcl=$EXTERNALS_DIR --prefix=$EXTERNALS_DIR
 
 make -j6
+
+make install
 
 cd $BUILD_DIR
