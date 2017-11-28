@@ -11,19 +11,19 @@ sudo apt-get install autoconf
 source variables_build.cfg
 
 #2. get tcl
-#source ./scripts/get_tcl.sh
+source ./scripts/get_tcl.sh
 
 #3. get tk
-#source ./scripts/get_tk.sh
+source ./scripts/get_tk.sh
 
 #4. get freetype
-#source ./scripts/get_freetype.sh
+source ./scripts/get_freetype.sh
 
 #5. get vtk
-#source ./scripts/get_vtk.sh
+source ./scripts/get_vtk.sh
 
 #6. get GDCM
-#source ./scripts/get_gdcm.sh
+source ./scripts/get_gdcm.sh
 
 #7. get ITK
 source ./scripts/get_itk.sh
