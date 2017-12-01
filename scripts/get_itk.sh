@@ -5,7 +5,7 @@ echo "Downloading ITK ${ITK_CHECKOUT} and building into ${ITK_BUILD_DIR}"
 
 ITK_OPTIONS="-DBUILD_SHARED_LIBS=ON\
  -DITK_LEGACY_SILENT=ON\
-  -DITK_WRAP_PYTHON=ON\
+  -DITK_WRAP_PYTHON=OFF\
    -DModule_ITKVtkGlue=ON\
     -DVTK_DIR=$VTK_CMAKE_DIR\
      -DITK_USE_SYSTEM_GDCM=ON\
@@ -17,7 +17,7 @@ git clone $ITK_URL
 
 cd $ITK_DIR
 
-#git checkout $ITK_CHECKOUT
+git checkout $ITK_CHECKOUT
 
 mkdir $ITK_BUILD_DIR
 

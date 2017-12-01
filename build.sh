@@ -40,5 +40,8 @@ echo "EXTERNALS_DIR=$EXTERNALS_DIR"
 #9 get mmg
 #source ./scripts/get_mmg.sh
 
-#10 MITK
+#10 DCMTK
+#source ./scripts/get_dcmtk.sh
+
+#11 MITK
 source ./scripts/get_mitk.sh
